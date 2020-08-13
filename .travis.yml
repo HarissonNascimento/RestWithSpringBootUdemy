@@ -21,8 +21,7 @@ before_deploy:
 deploy:
   provider: script
   script:
-    docker tag rest-with-spring-boot-udemy:latest
-    harissonnascimento/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
+    docker tag rest-with-spring-boot-udemy:latest harissonnascimento/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
     docker push harissonnascimento/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
   on:
     branch: master
