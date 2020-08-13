@@ -6,5 +6,5 @@
 /.settings/
 /.gradle/
 /build/
-*ppk
-*pem
+*.pem
+*.ppk
